@@ -102,10 +102,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/history" class="nav-link">
+            <a href="/list" class="nav-link">
               <i class="nav-icon fa fa-list "></i>
               <p>
-              Employees history
+              Employees List
               </p>
             </a>
           </li>

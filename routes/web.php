@@ -30,3 +30,8 @@ Route::get('history', function () {
     return view('history');
 });
 
+Route::get('list', function () {
+    return view('list');
+});
+
+

@@ -49,39 +49,34 @@
       </div>
     </form>
   
-  <h2>Employees History</h2>
-  <table class="table"> 
-  <h5> John </h5>
+  <h2>Employees List</h2>
+  <table class="table">
     <thead class="thead-dark">
       <tr>
-        
-        <th>Date</th>
-        <th>Time-in</th>
-        <th>Time-out</th>
-        <th>Status</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Attandence</th>
+       
       </tr>
     </thead>
     <tbody id="table">
       <tr>
-      
-        <td>12-6-2020</td>
-        <td>03:19</td>
-        <td>07:33</td>
-        <td>Present</td>
+        <td>12345</td>
+        <td>John</td>
+        <td> <a class="btn btn-primary " href="/history"> See history</a> </td>
+        
       </tr>
       <tr>
-       
-        <td>12-6-2020</td>
+        <td>356763</td>
+        <td>Mary</td>
         <td>03:55</td>
-        <td>07:33</td>
-        <td>Late</td>
+      
       </tr>
       <tr>
-       
-        <td>30-9-2020</td>
+        <td>99633</td>
+        <td>July</td>
         <td>03:00</td>
-        <td>09:00</td>
-        <td>present</td>
+       
       </tr>
       
     </tbody>
