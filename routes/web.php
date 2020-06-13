@@ -30,15 +30,15 @@ Route::get('history', function () {
     return view('history');
 });
 
-<<<<<<< HEAD
+
 Route::get('list', function () {
     return view('list');
 });
 
 
-=======
+
 Route::get('profile', function () {
     return view('profile');
 });
 
->>>>>>> 4ca9e91e4781c8363efb441fa2a539c861689edc
+

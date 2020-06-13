@@ -69,13 +69,13 @@
       <tr>
         <td>356763</td>
         <td>Mary</td>
-        <td>03:55</td>
+        <td> <a class="btn btn-primary " href="/history"> See history</a> </td>
       
       </tr>
       <tr>
         <td>99633</td>
         <td>July</td>
-        <td>03:00</td>
+        <td> <a class="btn btn-primary " href="/history"> See history</a> </td>
        
       </tr>
       
