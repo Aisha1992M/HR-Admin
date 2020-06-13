@@ -30,3 +30,7 @@ Route::get('history', function () {
     return view('history');
 });
 
+Route::get('profile', function () {
+    return view('profile');
+});
+
