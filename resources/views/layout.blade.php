@@ -109,22 +109,23 @@
               </p>
             </a>
           </li>
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a href="/requste" class="nav-link">
               <i class="nav-icon ion-android-clipboard"></i>
               <p>
             Request Managment
               </p>
             </a>
-          </li>
-          <li class="nav-item">
+          </li>-->
+            </li>
+            <li class="nav-item">
                 <a href="/profile" class="nav-link">
-                    <i class="nav-icon fa fa-cog "></i>
+                    <i class="nav-icon fas fa-user-alt"></i>
                     <p>
-                        Edit profile
+                        Profile
                     </p>
                 </a>
-          </li>
+            </li>
 
 
         </ul>

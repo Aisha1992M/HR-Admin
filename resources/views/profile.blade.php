@@ -1,94 +1,87 @@
 @extends('layout')
 @section('content')
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>profile</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container emp-profile">
+    <form method="get" action="/eprofile">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="profile-head">
+                    <h5>
+                        Arwa Bintaleb
+                    </h5>
+                    <br><br>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item"
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
+            </div>
+        </div>
 
 
-    <head>
-        <!------ Include the above in your HEAD tag ---------->
-        </body>
-        <div class="container" style="padding-top: 60px;">
-            <h1>Edit Profile</h1>
-            <div class="row">
 
+        <div class="row">
 
-                <!-- edit form column -->
-                <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+            <div class="col-md-8">
+                <div class="tab-content profile-tab" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>First name:</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Arwa</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Last name:</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Bintaleb</p>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Email</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>a@r.com</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Mobile no:</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>0501234567</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Username:</label>
+                            </div>
+                            <div class="col-md-6">
+                                <p>arwa12345</p>
+                            </div>
+                        </div>
+                    </div>
 
-                    <h3>Personal info</h3><br>
-
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">First name:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" value="" type="text">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Last name:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" value="" type="text">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">National id:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" value="" type="number">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Employee id:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" value="" type="number">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Email:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" value="" type="text">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Mobile no:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" value="" type="number">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-md-3 control-label">Username:</label>
-                            <div class="col-md-8">
-                                <input class="form-control" value="" type="text">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-3 control-label">Password:</label>
-                            <div class="col-md-8">
-                                <input class="form-control" value="" type="password">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-3 control-label">Confirm password:</label>
-                            <div class="col-md-8">
-                                <input class="form-control" value="" type="password">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-md-3 control-label"></label>
-                            <div class="col-md-8">
-                                <input class="btn btn-primary" value="Save Changes" type="button">
-                                <span></span>
-                                <input class="btn btn-default" value="Cancel" type="reset">
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
-        </body>
-</html>
+    </form>
+</div>
 @endsection

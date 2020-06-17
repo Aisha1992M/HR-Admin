@@ -13,13 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     return view('login');
-});
-
-
-Route::get('dash', function () {
-    return view('dash');
 });
 
 Route::get('shift', function () {
@@ -35,10 +31,18 @@ Route::get('list', function () {
     return view('list');
 });
 
-
+Route::get('dash', function () {
+    return view('dash');
+});
 
 Route::get('profile', function () {
     return view('profile');
 });
+
+Route::get('eprofile', function () {
+    return view('eprofile');
+});
+
+
 
 
