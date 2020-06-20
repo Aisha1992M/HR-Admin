@@ -13,7 +13,7 @@
             <div class="col-md-6">
                 <div class="profile-head">
                     <h5>
-                        Arwa Bintaleb
+                        {{ Auth::user()->f_name }} {{ Auth::user()->l_name }}
                     </h5>
                     <br><br>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -41,7 +41,7 @@
                                 <label>First name:</label>
                             </div>
                             <div class="col-md-6">
-                                <p>Arwa</p>
+                                <p>{{ Auth::user()->f_name }} </p>
                             </div>
                         </div>
                         <div class="row">
@@ -49,7 +49,7 @@
                                 <label>Last name:</label>
                             </div>
                             <div class="col-md-6">
-                                <p>Bintaleb</p>
+                                <p>{{ Auth::user()->l_name }}</p>
                             </div>
                         </div>
                         </div>
@@ -58,7 +58,7 @@
                                 <label>Email</label>
                             </div>
                             <div class="col-md-6">
-                                <p>a@r.com</p>
+                                <p>{{ Auth::user()->email }}</p>
                             </div>
                         </div>
                         <div class="row">
@@ -66,17 +66,10 @@
                                 <label>Mobile no:</label>
                             </div>
                             <div class="col-md-6">
-                                <p>0501234567</p>
+                                <p>{{ Auth::user()->mobile }}</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label>Username:</label>
-                            </div>
-                            <div class="col-md-6">
-                                <p>arwa12345</p>
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>

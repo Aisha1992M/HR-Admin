@@ -16,13 +16,13 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">First name:</label>
                             <div class="col-lg-8">
-                                <input class="form-control" value="Arwa" type="text">
+                                <input class="form-control" value="{{ Auth::user()->f_name }}" type="text">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Last name:</label>
                             <div class="col-lg-8">
-                                <input class="form-control" value="Bintaleb" type="text">
+                                <input class="form-control" value="{{ Auth::user()->l_name }}" type="text">
                             </div>
                         </div>
 
@@ -30,32 +30,27 @@
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Email:</label>
                             <div class="col-lg-8">
-                                <input class="form-control" value="a@r.com" type="text">
+                                <input class="form-control" value="{{ Auth::user()->email }}" type="text">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-lg-3 control-label">Mobile no:</label>
                             <div class="col-lg-8">
-                                <input class="form-control" value="0501234567" type="number">
+                                <input class="form-control" value="{{ Auth::user()->mobile }}" type="number">
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label class="col-md-3 control-label">Username:</label>
-                            <div class="col-md-8">
-                                <input class="form-control" value="arwa12345" type="text">
-                            </div>
-                        </div>
+
                         <div class="form-group">
                             <label class="col-md-3 control-label">Password:</label>
                             <div class="col-md-8">
-                                <input class="form-control" value="12345678" type="password">
+                                <input class="form-control" value="" type="password">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-3 control-label">Confirm password:</label>
                             <div class="col-md-8">
-                                <input class="form-control" value="12345678" type="password">
+                                <input class="form-control" value="" type="password">
                             </div>
                         </div>
                         <div class="form-group">

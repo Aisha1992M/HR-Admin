@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUsersRolesTable extends Migration
+class CreateOutFpsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateUsersRolesTable extends Migration
      */
     public function up()
     {
-        Schema::create('users_roles', function (Blueprint $table) {
-            $table->id();
+        Schema::create('out_fp', function (Blueprint $table) {
+            $table->id('out_id');
             $table->unsignedBigInteger('user_id');            
-            $table->foreign('user_id')->references('u_id')->on('users');
-            $table->unsignedBigInteger('role_id');            
-            $table->foreign('role_id')->references('r_id')->on('roles');
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->dateTime('out_date');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateUsersRolesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users_roles');
+        Schema::dropIfExists('out_fps');
     }
 }

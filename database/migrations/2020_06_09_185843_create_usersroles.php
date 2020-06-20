@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWorkingHoursTable extends Migration
+class CreateUsersroles extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,15 @@ class CreateWorkingHoursTable extends Migration
      */
     public function up()
     {
-        Schema::create('working_hours', function (Blueprint $table) {
+        Schema::create('usersroles', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id');            
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->datetime('start_time');
-            $table->datetime('finish_time');
-            $table->date('day');
+            $table->unsignedBigInteger('u_id');
+            $table->foreign('u_id')->references('id')->on('users');
+            $table->unsignedBigInteger('r_id');
+            $table->foreign('r_id')->references('id')->on('roles');
             $table->timestamps();
-
         });
     }
-    
 
     /**
      * Reverse the migrations.
@@ -33,6 +30,6 @@ class CreateWorkingHoursTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('working_hours');
+        Schema::dropIfExists('usersroles');
     }
 }

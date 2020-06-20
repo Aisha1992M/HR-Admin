@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('login');
+    return view('auth.login');
 });
 
 Route::get('shift', function () {
@@ -31,8 +31,8 @@ Route::get('list', function () {
     return view('list');
 });
 
-Route::get('dash', function () {
-    return view('dash');
+Route::get('home', function () {
+    return view('home');
 });
 
 Route::get('profile', function () {
@@ -43,6 +43,25 @@ Route::get('eprofile', function () {
     return view('eprofile');
 });
 
+Route::get('welcome', function () {
+    return view('welcome');
+});
 
 
 
+
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

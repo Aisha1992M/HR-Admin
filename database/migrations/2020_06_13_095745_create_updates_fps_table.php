@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateUpdatesFpTable extends Migration
+class CreateUpdatesFpsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,7 +16,7 @@ class CreateUpdatesFpTable extends Migration
         Schema::create('updates_fp', function (Blueprint $table) {
             $table->id('update_id');
             $table->unsignedBigInteger('user_id');            
-            $table->foreign('user_id')->references('u_id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->dateTime('in');
             $table->dateTime('out');
             $table->timestamps();
@@ -30,6 +30,6 @@ class CreateUpdatesFpTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('updates_fp');
+        Schema::dropIfExists('updates_fps');
     }
 }
