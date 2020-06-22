@@ -124,7 +124,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="/shift" class="nav-link">
+            <a href="{{url ('WorkingHour/create') }}" class="nav-link">
               <i class="nav-icon fa fa-cog "></i>
               <p>
                Shift Setup
