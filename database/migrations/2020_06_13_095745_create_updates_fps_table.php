@@ -15,8 +15,8 @@ class CreateUpdatesFpsTable extends Migration
     {
         Schema::create('updates_fp', function (Blueprint $table) {
             $table->id('update_id');
-            $table->unsignedBigInteger('user_id');            
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedBigInteger('emp_id');            
+            $table->foreign('emp_id')->references('emp_id')->on('employees')->onDelete('cascade');
             $table->dateTime('in');
             $table->dateTime('out');
             $table->timestamps();

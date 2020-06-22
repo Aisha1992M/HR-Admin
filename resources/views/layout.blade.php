@@ -133,13 +133,28 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/list" class="nav-link">
-              <i class="nav-icon fa fa-list "></i>
-              <p>
-              Employees List
-              </p>
-            </a>
-          </li>
+
+               <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                   <i class="fas fa-user-tie"></i>
+                   <span>Employees</span>
+               </a>
+
+              <ul>
+                <li class="nav-item">
+                    <a href="/list" class="nav-link">
+                        <i class="nav-icon fa fa-list "></i>
+                        <p>Employees list</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/history" class="nav-link">
+                        <i class="fas fa-history"></i>
+                        <p>Attendance history</p>
+                    </a>
+                </li>
+              </ul>
+            </li>
+
           <!--<li class="nav-item">
             <a href="/requste" class="nav-link">
               <i class="nav-icon ion-android-clipboard"></i>
@@ -148,10 +163,10 @@
               </p>
             </a>
           </li>-->
-            </li>
+
             <li class="nav-item">
                 <a href="/profile" class="nav-link">
-                    <i class="nav-icon fas fa-user-alt"></i>
+                    <i class="nav-icon far fa-file user"></i>
                     <p>
                         Profile
                     </p>
