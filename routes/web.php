@@ -18,17 +18,15 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('shift', function () {
-    return view('shift');
-});
+
 
 Route::get('history', function () {
     return view('history');
 });
 
 
-Route::get('list', function () {
-    return view('list');
+Route::get('employee', function () {
+    return view('employee');
 });
 
 Route::get('home', function () {
@@ -47,7 +45,21 @@ Route::get('welcome', function () {
     return view('welcome');
 });
 
+Route::get('/employee', 'Account\EmployeeController@show')->name('Employee_View');
+Route::get('/employee/delete/{id}', 'Account\EmployeeController@delete')->name('Employee_Destroy');
+Route::get('/employee/edit/{id}', 'Account\EmployeeController@edit')->name('Employee_Edit');
+Route::post('/employee/edit', 'Account\EmployeeController@editing')->name('Employee_Edit_POST');
+Route::get('/employee/add', 'Account\EmployeeController@add')->name('Employee_Add_GET');
+Route::post('/employee/add', 'Account\EmployeeController@adding')->name('Employee_Add_POST');
+
+
+
 Route::resource('/WorkingHour','WorkingHoursController');
+
+Route::resource('/users','EditController');
+
+
+
 
 
 

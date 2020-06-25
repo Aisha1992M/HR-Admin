@@ -55,7 +55,7 @@
 
 
       <div class="nav-item dropdown">
-          <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+          <a id="navbarDropdown" class="nav-link dropdown-toggle float-right" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
               {{ Auth::user()->f_name }} <span class="caret"></span>
           </a>
 
@@ -127,7 +127,7 @@
             <a href="{{url ('WorkingHour/create') }}" class="nav-link">
               <i class="nav-icon fa fa-cog "></i>
               <p>
-               Shift Setup
+               {{__('Shift Setup')}}
 
               </p>
             </a>
@@ -136,20 +136,22 @@
 
                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                    <i class="fas fa-user-tie"></i>
-                   <span>Employees</span>
+
+                   {{__('Employees')}}
                </a>
 
               <ul>
-                <li class="nav-item">
-                    <a href="/list" class="nav-link">
+               <li class="nav-item">
+                    <a href="/employee" class="nav-link">
                         <i class="nav-icon fa fa-list "></i>
-                        <p>Employees list</p>
+                        {{__('Employees list')}}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="/history" class="nav-link">
                         <i class="fas fa-history"></i>
-                        <p>Attendance history</p>
+
+                        {{__('Attendance history')}}
                     </a>
                 </li>
               </ul>
@@ -168,7 +170,7 @@
                 <a href="/profile" class="nav-link">
                     <i class="nav-icon far fa-file user"></i>
                     <p>
-                        Profile
+                        {{__('profile')}}
                     </p>
                 </a>
             </li>

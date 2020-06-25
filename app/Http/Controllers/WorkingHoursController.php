@@ -61,7 +61,7 @@ class WorkingHoursController extends Controller
             "periodOut" => "required:working_hours",
         ]);
        // $user_id = Auth::user()->id;
-      
+
        WorkingHour::create($request->all());
 
         return view('home');

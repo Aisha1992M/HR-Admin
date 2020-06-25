@@ -2,6 +2,8 @@
   <dictionary name="Aalma">
     <words>
       <w>checklogin</w>
+      <w>emps</w>
+      <w>eprofile</w>
     </words>
   </dictionary>
 </component>
