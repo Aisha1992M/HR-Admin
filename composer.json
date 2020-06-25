@@ -16,7 +16,10 @@
         "laravel/passport": "^9.2",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
-      "ext-mysqli": "*"
+      "ext-mysqli": "*",
+      "ext-mongodb": "*",
+        "ext-mysql_xdevapi": "*",
+        "orangehill/iseed": "1.1"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
@@ -28,7 +31,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+            "ext-mongo": "1.6.16"
+        }
     },
     "extra": {
         "laravel": {

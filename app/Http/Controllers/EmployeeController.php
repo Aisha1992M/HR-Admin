@@ -59,22 +59,21 @@ class EmployeeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function show($id)
+    public function show()
     {
-        if ( Larv::checkAuth() == 2 || Larv::checkAuth() == 3){
-            return redirect()->route('Dashboard');
-        }
+//        if ( User::checkAuth() == 2 || User::checkAuth() == 3){
+//            return redirect()->route('Dashboard');
+//        }
         $emp = Employee::all();
         $arr = array('emp' => $emp);
-        return view('admin.employee', $arr);
+        return view('employee', $arr);
     }
 
     public function add()
     {
-        return view('admin.employee_add');
+        return view('admin-employee_add');
     }
     public function adding(Request $request)
     {
@@ -120,7 +119,7 @@ class EmployeeController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function edit($id)
     {
@@ -182,7 +181,7 @@ class EmployeeController extends Controller
             'alert_type' => 'success',
         );
         $emp->delete();
-        return redirect()->route('Employee_View')->with('notification', $notification);
+        return redirect()->route('show')->with('notification', $notification);
     }
 
     /**
